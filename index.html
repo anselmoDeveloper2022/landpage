@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <div class="container">
+        <div id="show-result-crud" class="show-result-crud">
+            <p id="p-result-crud" class="p-result-crud"></p>
+            <span class="close" id="cls3">&times;</span>
+        </div>
+        <div class="cPanel">
+            <h1>Cadastro de Usuários</h1>
+            <button id="sendId" class="sendId">Enviar</button> 
+            <input type="text" id="inputId" class="inputId">
+            <button id="btn" class="btn">NEW</button>
+            <div id="bg-modal" class="bg-modal" >
+                <div id="modal" class="modal">
+                    <span class="close" id="cls">&times;</span>
+                    <h1>Informações do Usuário</h1>
+                    <form action="">
+                    <label>Nome&nbsp;</label><input class="infoInput" id="name" type="text" placeholder="Digite o nome"></label><br><br>
+                    <label>Avatar<input class="infoInput" id="avatar" type="text" placeholder="Digite informações do avatar"></label>
+                    <input class="btnSave" id="btnSave" type="submit" value="SALVAR">
+                    </form>
+                </div>
+            </div>
+            <div id="modal-user" class="modal-user">
+                <div id="info-user" class="info-user">
+                        <span class="close" id="cls1">&times;</span>
+                        <h3>Informações do Usuário</h3>
+                        <form id="users-form">
+                            <p id="info-user-p1" class="p"></p>
+                            <p id="info-user-p2" class="p"></p>
+                            <p id="info-user-p3" class="p"></p>
+                            <p id="info-user-p4" class="p"></p>                                                        
+                        </form>
+                </div>
+            </div>
+            <div id="modal-update" class="modal-update">
+                <div class="update-user">
+                        <span class="close" id="cls2">&times;</span>
+                        <form>
+                            <h3>Atualize Informações do Usuário</h3>
+                            <label>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="infoInput1" id="updateId" type="text"></label><br><br>
+                            <label>Nome</label><input class="infoInput1" id="updateName" type="text"></label><br><br>
+                            <label>Avatar<input class="infoInput1" id="updateAvatar" type="text"></label><br><br>
+                            <label>Data&nbsp;&nbsp;&nbsp;<input class="infoInput1" id="updateDate" type="text"></label>
+                            <input class="btnSave" id="btnUpdateSave" type="submit" value="SALVAR">
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="listUsers" id="listUsers">
+            <h1>Lista de Usuários</h1>
+            <table id="tableUsers" class="tableUsers" width="100%">
+                <thead>
+                    <tr>
+                        <th width="10%">ID</th>
+                        <th width="50%">NOME</th>
+                        <th width="20%">UPDATE</th>
+                        <th width="20%">DELETE</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyUsers"></tbody>
+            </table>
+            
+        </div>
+        
+    </div>
+    
+    <script src="js/script1.js"></script>
+</body>
+</html>
